@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/s4"
+        />
+
+    <RelativeLayout
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/LoginTIL"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/emailEn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@color/colorWhite"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/passwordlEn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEn"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:background="@color/colorWhite"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+
+            android:layout_below="@+id/passwordlEn"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/LoginTIL"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite"
+        android:id="@+id/Registerform"
+        >
+
+        <TextView
+            android:id="@+id/noaccount"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:text="Not have account?"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/registerbtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
