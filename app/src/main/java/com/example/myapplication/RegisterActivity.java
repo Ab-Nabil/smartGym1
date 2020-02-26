@@ -21,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         mReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this,ProfileActivity.class));
+                startActivity(new Intent(RegisterActivity.this,sexActivity.class));
             }
         });
 

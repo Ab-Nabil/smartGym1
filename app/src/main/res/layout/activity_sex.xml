@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sexActivity"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="CREATE YOUR PROFILE"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="20dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="22dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/p1"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="314dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:text="What is"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="21dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_below="@+id/t1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:text="YOUR SEX?"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="21dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_below="@id/t2"
+        />
+
+    <ImageView
+        android:id="@+id/m"
+        android:layout_width="250dp"
+        android:layout_height="159dp"
+        android:layout_below="@+id/t3"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/m" />
+
+    <ImageView
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/f"
+
+        android:layout_marginLeft="179dp"
+
+        android:layout_below="@+id/m"
+        />
+
+    <ImageView
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f"
+
+        android:layout_marginLeft="340dp"
+
+        android:layout_marginTop="-10dp"
+        app:srcCompat="@drawable/n"
+        android:onClick="nclick"/>
+
+</RelativeLayout>
